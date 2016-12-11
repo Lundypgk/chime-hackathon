@@ -1,0 +1,21 @@
+{
+  "name": "chime-node",
+  "version": "4.14.0",
+    "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "4.13.3",
+    "jade": "*",
+    "stylus": "*",
+    "serve-favicon": "*",
+    "morgan": "*",
+    "body-parser": "*",
+    "method-override": "*"
+  },
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  }
+}

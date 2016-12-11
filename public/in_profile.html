@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" class="fixed">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Chime || Home</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="vendor/toastr/toastr.min.css">
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/font-awesome.css">
+</head>
+
+<body style="background: #ececec;">
+    <div style="background:#383838;" id="nav">
+        <ul class="nav nav-pills">
+            <div class="text-center">
+                <a href="index_brand.html"><img src="images/chimemaybe.png" width=35%;></a>
+            </div>
+        </ul>
+    </div>
+
+    <div class="col-md-7" style="padding-top: 16px;float:left; margin-top:10px;">
+        <div>
+            <div class="profile-photo" style="">
+                <img src="images/hackathon-influencer2.jpg" style="position:relative;float:left;width: 100%;box-shadow: 1px solid #888;" alt="" class="img-circle">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div class="panel-content" style="
+    margin-top: 4%;
+    margin-bottom:4%;
+    margin-top:30px;
+    margin-left:;
+">
+            <h2 style="
+    margin-bottom: 2%;
+" class="text-center"><b style=" 
+    color: #EEAD0E;
+">Mikee Tristan Bowling</b></h2>
+            <ul class="user-contact-info ph-sm" style="
+    font-size: 1.2em;
+">
+                 <li class="text-center"><b><i class="color-primary mr-sm fa fa-tags"></i></b> Specialisation :<span style="color: #EEAD0E; font-weight:bold;">Beauty</span></li>
+                    
+                <li class="text-center" style="padding-top:10px; padding-right:50px;"><b><i class="color-primary mr-sm fa fa-instagram"></i><span style="color: #EEAD0E; font-weight:bold;"> 1234</span>  Followers</span></li>
+                
+            </ul>
+        </div>
+    </div>
+    
+        <div id="chartContainer" style="height:330px; margin-top:10%;">
+            <div class="canvasjs-chart-container" style="position: relative; text-align: left; cursor: auto;"><canvas class="canvasjs-chart-canvas" width="708" height="660" style="width: 340px; height: 320px; position: absolute;"></canvas><canvas class="canvasjs-chart-canvas" width="708" height="660" style="width: 354px; height: 330px; position: absolute;"></canvas>
+                <div class="canvasjs-chart-toolbar" style="position: absolute; right: 1px; top: 1px;"></div>
+                <div class="canvasjs-chart-tooltip" style="position: absolute; height: auto; box-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 2px 2px; z-index: 1000; display: none; border-radius: 5px;">
+                    <div style=" width: auto;height: auto;min-width: 50px;line-height: auto;margin: 0px 0px 0px 0px;padding: 5px;font-family: Calibri, Arial, Georgia, serif;font-weight: normal;font-style: italic;font-size: 14px;color: #000000;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);text-align: left;border: 2px solid gray;background: rgba(255,255,255,.9);text-indent: 0px;white-space: nowrap;border-radius: 5px;-moz-user-select:none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;} ">
+                        Sample Tooltip</div>
+                </div><a class="canvasjs-chart-credit" style="outline:none;margin:0px;position:absolute;right:2px;top:316px;color:dimgrey;text-decoration:none;font-size:11px;font-family: Calibri, Lucida Grande, Lucida Sans Unicode, Arial, sans-serif" tabindex="-1"
+                    target="_blank" href="http://canvasjs.com/">CanvasJS.com</a></div>
+        </div>
+
+    </div>
+    <div id="footer">
+        <div class="col-xs-12 navbar-inverse navbar-fixed-bottom" style="background:#FACB1B; font-size:0.87em; font-weight:initial; border:#FACB1B;">
+            <div class="row" id="bottomNav">
+                <div id="bottom-tab">
+                    <div class="col-xs-3 text-center "><a href="in_index.html"><i class="fa fa-home fa-2x"></i><br>Home</a></div>
+                    <div class="col-xs-3 text-center tab-active"><a href="in_profile.html"><i class="fa fa-user fa-2x"></i><br>Profile</a></div>
+                    <div class="col-xs-3 text-center"><a href="in_chat.html"><i class="fa fa-comments fa-2x"></i><br>Chat</a></div>
+                    <div class="col-xs-3 text-center "><a href="in_jobs.html"><i class="fa fa-briefcase fa-2x"></i><br>My Jobs</a></div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="javascript/canvasjs.min.js"></script>
+<script type="text/javascript">
+    window.onload = function() {
+        var chart = new CanvasJS.Chart("chartContainer", {
+            title: { text:"Revenue Earned"
+            },
+            data: [{
+                type: "spline",
+                dataPoints: [{
+                    label: "Monday",
+                    y: 220
+                }, {
+                    label: "Tuesday",
+                    y: 400
+                }, {
+                    label: "Wednesday",
+                    y: 500
+                }, {
+                    label: "Thursday",
+                    y: 403
+                }, {
+                    label: "Friday",
+                    y: 550
+                }, {
+                    label: "Saturday",
+                    y: 350
+                }, {
+                    label: "Sunday",
+                    y: 600
+                }]
+            }]
+        });
+        chart.render();
+    }
+</script>
+
+<style>
+    #bottom-tab {
+        margin-top: 5px;
+    }
+    
+    b.serif {
+        font-family: "Times New Roman", Times, serif;
+        color: #70c0eb;
+        border-style: double;
+        border-width: 5px;
+    }
+</style>
+
+</html>

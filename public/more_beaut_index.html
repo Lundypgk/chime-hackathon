@@ -29,7 +29,7 @@
             </div>
         </ul>
     </div>
-<div class="row topRow" style="background:#fff; margin-bottom:4%;">
+    <div class="row topRow" style="background:#fff; margin-bottom:4%;">
         <div class="col-md-1" style="padding-top: 16px;float:left;">
             <div>
                 <div class="profile-photo" style="">
@@ -54,7 +54,7 @@
     font-size: 1.2em;
 ">
                     <li><b><i class="color-primary mr-sm fa fa-tags"></i></b> Category :<span style="color: #EEAD0E; font-weight:bold;">Beauty</span></li>
-                     </ul>
+                </ul>
             </div>
         </div>
         <div class="row" style="margin-top:10%;">
@@ -66,21 +66,21 @@
             </div>
         </div>
         <!--/.row-->
-    <div style="
+        <div style="
     color: #000;
     font-size: 1.1em;
     padding: 3%;
 ">In YIN3 and YANG3 with colors and action youth are stating that this old Chinese concept can be adapted to their current world: Young Men and Young Women are bound together even more when HAVING FUN!</div>
-  
-  
-   <a href="#" style="height:40px;background: #FACB1B;border: #FACB1B;color: #000;padding-top: 9px;font-weight: bold;"  class="btn btn-primary btn-block">Apply Job</a> 
-                            
 
-  </div>
 
-  
-<!--second -->
-<div class="row topRow" style="background:#fff; margin-bottom:4%;">
+        <a href="#" style="height:40px;background: #FACB1B;border: #FACB1B;color: #000;padding-top: 9px;font-weight: bold;" class="btn btn-primary btn-block" id="applyJob">Apply Job</a>
+
+
+    </div>
+
+
+    <!--second -->
+    <div class="row topRow" style="background:#fff; margin-bottom:4%;">
         <div class="col-md-1" style="padding-top: 16px;float:left;">
             <div>
                 <div class="profile-photo" style="">
@@ -105,7 +105,7 @@
     font-size: 1.2em;
 ">
                     <li><b><i class="color-primary mr-sm fa fa-tags"></i></b> Category :<span style="color: #EEAD0E; font-weight:bold;">Beauty</span></li>
-                     </ul>
+                </ul>
             </div>
         </div>
         <div class="row" style="margin-top:10%;">
@@ -117,20 +117,19 @@
             </div>
         </div>
         <!--/.row-->
-    <div style="
+        <div style="
     color: #000;
     font-size: 1.1em;
     padding: 3%;
-">"No time to shampoo? No problem!
-The newest innovation in dry shampoo. Completely undetectable in the hair and is ideal for all hair color. Boost volume and cleanses hair without water."</div>
-  
-  
-   <a href="#" style="height:40px;background: #FACB1B;border: #FACB1B;color: #000;padding-top: 9px;font-weight: bold;"  class="btn btn-primary btn-block">Apply Job</a> 
-                            
+">"No time to shampoo? No problem! The newest innovation in dry shampoo. Completely undetectable in the hair and is ideal for all hair color. Boost volume and cleanses hair without water."</div>
 
-  </div>
 
-<div class="row topRow" style="background:#fff; margin-bottom:4%;">
+        <a href="#" style="height:40px;background: #FACB1B;border: #FACB1B;color: #000;padding-top: 9px;font-weight: bold;" class="btn btn-primary btn-block">Apply Job</a>
+
+
+    </div>
+
+    <div class="row topRow" style="background:#fff; margin-bottom:4%;">
         <div class="col-md-1" style="padding-top: 16px;float:left;">
             <div>
                 <div class="profile-photo" style="">
@@ -155,7 +154,7 @@ The newest innovation in dry shampoo. Completely undetectable in the hair and is
     font-size: 1.2em;
 ">
                     <li><b><i class="color-primary mr-sm fa fa-tags"></i></b> Category :<span style="color: #EEAD0E; font-weight:bold;">Beauty</span></li>
-                     </ul>
+                </ul>
             </div>
         </div>
         <div class="row" style="margin-top:10%;">
@@ -167,20 +166,18 @@ The newest innovation in dry shampoo. Completely undetectable in the hair and is
             </div>
         </div>
         <!--/.row-->
-    <div style="
+        <div style="
     color: #000;
     font-size: 1.1em;
     padding: 3%;
-">Pronto Dry Shampoo Spray is the ultimate time saver. It refreshes, revives, and rejuvenates the hair
-in a matter of minutes — no water or blow-dryer required. It thoroughly and effectively soaks up oil,
-removes product buildup, and boosts volume. Hair looks, feels, and smells freshly shampooed with
-a clean, lemon verbena scent. Go ahead, hit snooze!</div>
-  
-  
-   <a href="#" style="height:40px;background: #FACB1B;border: #FACB1B;color: #000;padding-top: 9px;font-weight: bold;"  class="btn btn-primary btn-block">Apply Job</a> 
-                            
+">Pronto Dry Shampoo Spray is the ultimate time saver. It refreshes, revives, and rejuvenates the hair in a matter of minutes — no water or blow-dryer required. It thoroughly and effectively soaks up oil, removes product buildup, and boosts volume.
+            Hair looks, feels, and smells freshly shampooed with a clean, lemon verbena scent. Go ahead, hit snooze!</div>
 
-  </div>
+
+        <a href="#" style="height:40px;background: #FACB1B;border: #FACB1B;color: #000;padding-top: 9px;font-weight: bold;" class="btn btn-primary btn-block">Apply Job</a>
+
+
+    </div>
 
 
 
@@ -302,11 +299,16 @@ a clean, lemon verbena scent. Go ahead, hit snooze!</div>
             }]
         });
         chart2.render();
-    }
+    };
+
+    $(document).ready(function() {
+        $("#applyJob").click(function(e) {
+            $("#applyJob").text("Applied");
+        });
+
+    });
 </script>
 </head>
-
-<body>
 
 
 </html>
